@@ -22,7 +22,12 @@ public class HomeController : Controller
     {
         return View();
     }
-
+[HttpPost]
+    public IActionResult Index(string fullName,string Email)
+    {
+        ViewBag.name = "hello"+ " "+ fullName+"-"+ Email;
+        return View();
+    }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
