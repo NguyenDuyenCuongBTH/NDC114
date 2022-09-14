@@ -19,7 +19,7 @@ namespace NDCuong114.Controllers
 
 
             };
-            ViewBag.DanhsachSV = StdList.Count();
+            ViewData["Students"] = StdList;
             return View();
         }
         [HttpGet]

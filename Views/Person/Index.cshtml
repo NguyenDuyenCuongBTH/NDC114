@@ -1,2 +1,24 @@
-<h3> View Index</h3>
-<h4>So sinh vien: @ViewBag.ThongtinSV</h4>
+
+<h2>Danh sách sinh viên</h2>
+<hr>
+<table class="table border">
+    <tr>
+        <th>
+            <label>tuoi</label>
+        </th>
+        <th>
+            <label>noi o</label>
+        </th>
+        <th>
+            <label>sdt</label>
+        </th>
+    </tr>
+    @foreach (var item in ViewData["Person"] as List<Person>)  
+    {
+     <tr>
+        <td>@item.Address</td>
+        <td>@item.Age</td>
+        <td>@item.PhoneNumber</td>
+     </tr>
+    }
+</table>

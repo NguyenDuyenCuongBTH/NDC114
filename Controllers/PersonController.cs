@@ -12,7 +12,7 @@ namespace NDCuong114.Controllers
             new Person { Age = 18, Address = "HoTay", PhoneNumber = "0869246872" },
             new Person { Age = 15, Address = "HaNoi", PhoneNumber = "0986324156" },
         };
-         ViewBag.ThongtinSV = StdList.Count();
+          ViewData["Person"] = StdList;
             return View();
      }
      [HttpGet]

@@ -25,7 +25,7 @@ public class HomeController : Controller
 [HttpPost]
     public IActionResult Index(string fullName,string Email)
     {
-        ViewBag.name = "hello"+ " "+ fullName+"-"+ Email;
+        ViewBag.name = "hihi"+ " "+ fullName+"-"+ Email;
         return View();
     }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
